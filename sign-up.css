@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./Norse-Bold.woff2) format(woff2),
+         url(./Norse-Bold.woff) format(woff);
+}
+
+/* h1 {
+    font-family: Norse-Bold, sans-serif, 'Times New Roman', Times;
+} */
+:root {
+    box-sizing: border-box;
+    --border_color: #E5E7EB;
+    --btn_green: #596D48;
+}
+
+html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    background-image: url(./leave-background.jpg);
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+
+}
+
+div.website_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 / 0.3);
+    height: 20vh;
+    width: 100%;
+    margin-top: 30%;
+}
+
+[src="./odin-lined.png"] {
+    height: 80%;
+}
+#website_name {
+    color: white;
+    font-size: 8rem;
+    font-family: Norse-Bold, Arial, Helvetica, sans-serif;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+    /* padding-left: 50px; */
+    width: 100vw;
+}
+
+form  {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+
+#header_1, #header_2 {
+    margin-left: 50px;
+    width: 40vw;
+}
+
+#header_1 > span {
+    font-style: italic;
+}
+.form_input {
+    display: flex;
+}
+
+.form_left, .form_right {
+    display: flex;
+    flex-direction: column;
+}
+
+#form_header {
+    font-size: 30px;
+}
+label {
+    margin-top: 20px;
+    color: gray;
+}
+
+.form_right {
+    margin-left: 100px;
+}
+
+input {
+    width: 20vw;
+    height: 30px;
+    border-color: var(--border_color);
+    border-radius: 10px;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 50px;
+}
+
+#create_account_btn {
+    width: 20rem;
+    height: 3rem;
+    background-color: var(--btn_green);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-color: var(--border_color);
+}
+
+#already_have {
+    font-size: 20px;
+}
+#already_have a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--btn_green);
+}
